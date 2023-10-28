@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400;1,500&family=Oswald:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(63, 63, 63);
+}
+a:active {
+  color: black;
+}
+
+body {
+  background-image: url("../images/mufins_back.svg");
+  background-repeat: repeat-y;
+}
+
+a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.17rem;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 35px;
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+header .divBack {
+  height: 45vh;
+  left: 0;
+  position: absolute;
+  background-image: url("../images/back_header.svg");
+  border-bottom: 1.5vh solid rgb(188, 58, 65);
+}
+header .divHeader {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  height: 30vh;
+}
+header .divHeader .menu {
+  background-color: rgb(249, 54, 96);
+}
+header .divHeader a {
+  color: white;
+}
+header .divHeader a:hover {
+  color: rgb(63, 63, 63);
+  padding: 1px;
+}
+header .divHeader a:active {
+  color: black;
+}
+header .divHeader ul {
+  margin: 0px 5px;
+}
+header .divHeader ul li {
+  margin: 0px 5px;
+}
+header .divHeader .rrss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+header .divHeader .rrss svg {
+  margin: 0px 5px;
+}
+header .divHeader .rrss .carritoSvg {
+  margin-left: 60px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.logo img {
+  width: 8rem;
+  height: 5rem;
+}
+
+.container {
+  background-color: rgb(252, 242, 231);
+  width: 75%;
+  border-radius: 10px;
+}
+
+footer {
+  position: relative;
+  width: 75%;
+  max-width: 1320px;
+  background-color: rgb(252, 242, 231);
+  height: 30vh;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 25px;
+}
+footer div {
+  height: 17vh;
+}
+footer div p {
+  font-size: 0.8rem;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.mainProductos {
+  position: relative;
+}
+.mainProductos .gridProd {
+  margin-bottom: 50px;
+}
+.mainProductos div {
+  padding: 5px 10px;
+}
+.mainProductos .divCarrito {
+height: 60px;}
+.mainProductos img {
+  width: 90%;
+  max-width: 520px;
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  margin: auto;
+}
+.mainProductos p {
+  margin-top: 15px;
+}
+.mainProductos .btn {
+  background-color: rgb(255, 120, 145);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 110px;
+  padding: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+.mainProductos .btn:hover {
+  background-color: rgb(255, 90, 125);
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .divHeader, .responHeader, .container, footer {
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+  }
+  .divHeader .carousel, .divHeader div, .divHeader img, .responHeader .carousel, .responHeader div, .responHeader img, .container .carousel, .container div, .container img, footer .carousel, footer div, footer img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .divHeader .menu, .responHeader .menu, .container .menu, footer .menu {
+    width: 75%;
+  }
+}
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
